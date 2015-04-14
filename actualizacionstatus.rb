@@ -30,14 +30,14 @@ end
 
 consumer = Consumer.new
 
-consumer.add({ 
-	address: "Av Orinoco Res Monte Alegre 2 Bello Monte Ccs",
-	fullname: "Alexander Ballera",
-	username: "@alexballera", 
-	firstName: "Alexander", 
-	lastName: "Ballera", 
-	gender: "male", 
-	email: "alexballera@gmail.com", 
-	phone: "04120172898",
-	status: "active" })
-puts consumer.list
+# consumer.add({ 
+# 	address: "Av Orinoco Res Monte Alegre 2 Bello Monte Ccs",
+# 	fullname: "Alexander Ballera",
+# 	username: "@alexballera", 
+# 	firstName: "Alexander", 
+# 	lastName: "Ballera", 
+# 	gender: "male", 
+# 	email: "alexballera@gmail.com", 
+# 	phone: "04120172898",
+# 	status: "active" })
+puts consumer.edit("@alexballera", "status" => "active")
